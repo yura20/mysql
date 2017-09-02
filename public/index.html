@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular</title>
+
+    <script src="angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="nameCtrl">
+  <div class="main">
+    <input type="text" ng-model="login">
+      
+      <input type="text" ng-model="password">
+      
+      <input type="button" ng-click="check()" value="Ok">
+
+     <h1>{{result}}</h1>
+      <div ng-repeat="a in myWelcome">login:{{a.login}} password:{{a.password}}</div>
+    </div>
+    <script src="my.js"></script>
+</body>
+
+</html>
